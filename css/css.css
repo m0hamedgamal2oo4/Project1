@@ -1,0 +1,986 @@
+/* إعادة تعيين العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    height: 6800px;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!! h e a d !!!!!!!!!!!!!!!!!!!!!!! */
+.head {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.head ul {
+    list-style: none;
+    float: right;
+    margin-right: 60px;
+    margin-top: 15px;
+}
+
+.head ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+.head ul li a {
+    color: aliceblue;
+}
+
+.head ul li a:hover {
+    color: rgba(255, 193, 70, 0.911);
+}
+
+/* إعدادات الشعار */
+.logo1 {
+    margin-top: -20px;
+    margin-left: 200px;
+}
+
+.logo1 img {
+    width: 100px;
+    height: 90px;
+}
+
+/* !!!!!!!!!!!!!!! back ground backimg1!!!!!!!!!!!!!!!! */
+
+/* إعدادات الخلفية */
+/* Background Section */
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/background.jpg);
+    background-size: cover;
+}
+
+/* Overlay for background */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Content section inside the overlay */
+.content-section {
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Primary heading style */
+.heading-primary {
+    font-size: 70px;
+    color: rgba(240, 248, 255, 0.875);
+    display: inline;
+}
+
+.heading-primary:hover {
+    color: #f48d06c7;
+}
+
+/* Intro text style */
+.intro-text {
+    font-size: 15px;
+    color: rgb(240, 255, 240);
+    word-spacing: 1.5px;
+}
+
+.intro-text:hover {
+    color: #f48d06c7;
+}
+
+/* Action buttons */
+.action-buttons button {
+    width: 150px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 80px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 0.8;
+}
+
+.btn-secondary {
+    background-color: #f48d06f0;
+    color: rgb(255, 255, 255);
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Welcome Section!!!!!!!!!!!!!!!!!!!! */
+.welcome-section {
+    text-align: center;
+}
+
+.welcome-heading {
+    font-size: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 125px;
+}
+
+.welcome-divider {
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background-color: #003049;
+}
+
+/* Container for welcome items */
+.welcome-container {
+    width: 80%;
+    height: 11%;
+    margin: auto;
+    margin-top: -100px;
+}
+
+/* Individual welcome item */
+.welcome-item {
+    position: relative;
+    width: 30%;
+    height: 260px;
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+    padding-top: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-style: solid;
+}
+
+.medium-item {
+    margin: 10% 5%;
+}
+.welcome-item a{
+    color: #ed9836;
+
+}
+.welcome-item:hover a{
+    color: #361600;
+
+}
+/* Hover effects for welcome items */
+.welcome-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: width 0.5s, height 0.5s, opacity 1s;
+}
+
+.welcome-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+/* Welcome item content */
+.welcome-content {
+    position: relative;
+}
+
+.welcome-item:hover .welcome-content {
+    z-index: 10;
+    color: white;
+}
+
+.welcome-item:hover .welcome-description {
+    color: #ee9b00d2;
+}
+
+.welcome-content i {
+    color: #ed9836;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.welcome-title {
+    font-size: 33px;
+}
+
+.welcome-description {
+    font-size: larger;
+    color: rgba(63, 63, 63, 0.84);
+}
+
+.welcome-link {
+    color: inherit; /* Inherits text color */
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Our Featured Services!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Heading style for section title */
+.h2-cont2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -30px;
+}
+
+/* Style for horizontal rule */
+.hr-cont2 {
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background-color: #003049;
+}
+
+/* Background style for section */
+.background {
+    background-color: #52525211;
+    margin-top: 60px;
+}
+
+/* Container for the section */
+.cont2 {
+    width: 70%;
+    min-height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+/* Container for first set of items */
+.per1-cont2 {
+    position: absolute;
+    width: 100%;
+    height: 46%;
+    margin-top: 10px;
+}
+
+/* Style for each item container */
+.div1-cont2 {
+    width: 250px;
+    height: 340px;
+    margin-top: 5px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+/* Style for images within item containers */
+.div1-cont2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    outline: 3px solid #ff8c0857;
+}
+
+/* Margin adjustment for medium-sized items */
+.cont2medum1 {
+    margin: 0px 110px;
+}
+
+/* Container for second set of items */
+.per2-cont2 {
+    margin-top: 35%;
+}
+
+/* Overlay effect for item containers */
+.div1-cont2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 1.5s;
+    z-index: 1;
+    border-radius: 5%;
+}
+
+/* Overlay effect on hover */
+.div1-cont2:hover::after {
+    opacity: 1;
+    transition: 0.5s;
+    outline: 2px solid #ffb703;
+}
+
+/* Style for text and link within item containers */
+.Written-cont2 {
+    z-index: 2;
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 16%;
+    color: azure;
+    visibility: hidden;
+}
+
+/* Text and link visibility on hover */
+.div1-cont2:hover .Written-cont2 {
+    visibility: visible;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!More Services!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ************************** Header Styles ************************** */
+.h2-more-services {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hr-more-services {
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background-color: #003049;
+}
+
+/* ************************** Background Section ************************** */
+.background-more-services {
+    background-color: #52525211;
+}
+
+/* ************************** Container Styles ************************** */
+.container-more-services {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+}
+
+/* ************************** Service Item Styles ************************** */
+.service-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 30%;
+    height: 130px;
+    padding: 30px 5px;
+    display: inline;
+    float: left;
+    margin-top: 100px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    outline: 1.5px solid #564200ab;
+    background-color: #bfbdc16a;
+}
+
+/* ************************** Service Item Mid Styles ************************** */
+.service-item-mid {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+/* ************************** Icon Container Styles ************************** */
+.icon-container {
+    color: #003049;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: #ee9b00d0;
+    display: inline;
+}
+
+/* ************************** Hover Effects ************************** */
+.service-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.service-item:hover::after {
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.4s;
+    outline: 2px solid #ffb703;
+}
+
+.service-item:hover .icon-container {
+    position: relative;
+    z-index: 2;
+    color: #f48d06c7;
+    background-color: #003049;
+}
+
+.service-item:hover h3 {
+    position: relative;
+    color: #f5f5f5;
+    z-index: 2;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!why choose us!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Header Styling */
+.h2-more-services {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Horizontal Rule Styling */
+.hr-more-services {
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background-color: #003049;
+} 
+
+
+/* Image Styling */
+.image-section img {
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #ee830071;
+    border-radius: 5%;
+}
+
+/* Background and Container Styling */
+.background4 .container4 {
+    background-color: #bfbdc16a;
+    width: 100%;
+    height: 70vh;
+    display: block;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: inline;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* Heading and List Styling */
+.main-content h3,
+.ul-services {
+    font-size: 22px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px 10px;
+    list-style: none;
+    color: #012e46cf;
+}
+
+/* Hover Effects for Main Content */
+.main-content h3:hover,
+.main-content li:hover {
+    color: #ee9b00;
+    display: inline-block;
+}
+
+.main-content li i {
+    color: #ee9b00;
+    display: inline-block;
+}
+
+.main-content li:hover i {
+    color: #003049;
+    display: inline-block;
+}
+
+/* Image Section Additional Styling */
+.image-section {
+    text-align: center;
+  
+}
+
+/* List Items in Image Section */
+.image-section   li {
+    font-size: 35px;
+    float: left;
+    margin-left: 50px;
+   
+    list-style: disc;
+    
+}
+
+.image-section li:hover {
+    color: #ee9b00;
+}
+
+/* List Styling in Image Section */
+.image-section ul {
+    padding-left: 1100px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!b a c k i m g 5!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* //////////////////////////////////////////////////////// .background-stats //////////////////////////////////////////////////////// */
+.background-stats {
+    width: 100%;
+    height: 120vh;
+    background: url(../image/gym2.jpg);
+    margin-top: 100px;
+    background-attachment: fixed;
+}
+
+/* //////////////////////////////////////////////////////// .overlay-stats //////////////////////////////////////////////////////// */
+.overlay-stats {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+/* //////////////////////////////////////////////////////// .stats-summary //////////////////////////////////////////////////////// */
+.stats-summary {
+    width: 100%;
+    height: 30%;
+}
+
+.stats-summary i {
+    color: #ee9b00f0;
+    font-size: 30px;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    padding-top: 90px;
+    margin-left: 110px;
+    text-align: center;
+}
+
+/* //////////////////////////////////////////////////////// .pricing-table //////////////////////////////////////////////////////// */
+.pricing-table {
+    width: 100%;
+    height: 100%;
+    background-color: #faf9f5;
+}
+
+/* //////////////////////////////////////////////////////// .pricing-option //////////////////////////////////////////////////////// */
+.pricing-option {
+    width: 25%;
+    height: 500px;
+    outline: 2px solid #00000016;
+    position: relative;
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+/* //////////////////////////////////////////////////////// .pricing-header //////////////////////////////////////////////////////// */
+.pricing-option .pricing-header {
+    background-color: #808080;
+    width: 100%;
+    height: 35%;
+    position: relative;
+    z-index: 1;
+    /* Ensure this layer is below the ::after effect */
+}
+
+/* //////////////////////////////////////////////////////// .pricing-details //////////////////////////////////////////////////////// */
+.pricing-details {
+    width: 92%;
+    height: 92%;
+    margin: 9px 13px;
+    outline: 1.5px solid white;
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    /* This layer should be above others */
+}
+
+/* //////////////////////////////////////////////////////// .pricing-cost //////////////////////////////////////////////////////// */
+.pricing-option .pricing-header .pricing-cost {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    outline: 2px solid white;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    margin-top: 20px;
+    margin-left: 130px;
+    z-index: 2;
+    /* This layer should be above others */
+}
+
+/* //////////////////////////////////////////////////////// .pricing-features //////////////////////////////////////////////////////// */
+.pricing-features {
+    width: 100%;
+    height: 325px;
+    text-align: left;
+    position: absolute;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px 20px;
+    z-index: 2;
+    /* This layer should be above others */
+}
+
+/* //////////////////////////////////////////////////////// .mid-part2 //////////////////////////////////////////////////////// */
+.mid-part2 .pricing-header {
+    background-color: #ee9b00;
+}
+
+/* //////////////////////////////////////////////////////// .pricing-option::after //////////////////////////////////////////////////////// */
+.pricing-option::after {
+    content: "";
+    width: 0;
+    height: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    /* The ::after pseudo-element should be beneath all layers */
+    background-color: black;
+    transition: 2s;
+}
+
+/* //////////////////////////////////////////////////////// Hover Effects //////////////////////////////////////////////////////// */
+.pricing-option:hover::after {
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.pricing-option:hover .pricing-details {
+    color: rgba(211, 42, 42, 0.632);
+    transition: 1s;
+}
+
+.pricing-option:hover .pricing-cost {
+    color: rgba(211, 42, 42, 0.632);
+    transition: 2s;
+}
+
+.pricing-option:hover .pricing-features {
+    color: #f5f5f5;
+    z-index: 4;
+}
+.pricing-features button{
+    font-size: larger;
+    width: 300px;
+    height: 47px;
+    margin-top: 30px;
+    background-color: #ed9836;
+    border: none;
+    color: white;
+}
+
+/* *******t o b e s o g o o d i n h t m l , c s s l a n g u a g e s************************************************************************************************************************************************ */
+/* *************** Background Section *************** */
+.background-image-section {
+    background: url(../image/gym4.jpg);
+    width: 100%;
+    height: 40vh;
+    margin-top: 80px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* *************** Overlay *************** */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* *************** Main Container *************** */
+.branch-info-container {
+    width: 85%;
+    height: 90%;
+    margin: 20px 100px;
+}
+
+/* *************** Branch Info *************** */
+.branch-info {
+    width: 50%;
+    height: 90%;
+    margin: 20px 0px;
+    float: left;
+    display: inline;
+}
+
+/* *************** Branch Heading *************** */
+.branch-heading {
+    display: inline-block;
+    margin-top: -80px;
+    padding-left: 170px;
+}
+
+/* *************** Branch Address *************** */
+.branch-address {
+    padding: 15px 90px;
+    color: #ffb703;
+}
+
+/* //// o u r t e a m ///////////////////////////////////////////////////////////////////////////////////// */
+.per7 {
+    width: 100%;
+    height: 90vh;
+    background-color: #9b9b9b7e;
+    margin-top: 30px;
+
+}
+
+.cont7 {
+    width: 85%;
+    height: 70%;
+
+    margin: 20px auto;
+}
+
+.div1-cont7 {
+    width: 30%;
+    height: 90%;
+    background-color: white;
+    display: inline;
+    float: left;
+    border-radius: 8%;
+    position: relative;
+}
+
+.mid-cont7 {
+    margin: 0 5%;
+}
+
+.part1-cont7 {
+    width: 90%;
+    height: 70%;
+
+    margin: auto;
+    z-index: 0;
+    position: relative;
+}
+
+.part2-cont7 {
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.image-cont7,
+.img-cont7 {
+    width: 310px;
+    height: 275px;
+    margin: auto;
+    padding-top: 7px;
+    border-radius: 10%;
+}
+
+
+.part2-cont7 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.icont-cont7 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    display: block;
+    font-size: 40px;
+    text-align: right;
+    border-radius: 8%;
+}
+
+.ovar-cont7 {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+
+}
+
+.div1-cont7:hover .icont-cont7 {
+    visibility: visible;
+}
+
+.icont-cont7 li i {
+    margin: 8px;
+    color: #ed9836;
+}
+
+.div1-cont7::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 1s;
+    border-radius: 8%;
+}
+
+.div1-cont7:hover:after {
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 2;
+    border-radius: 8%;
+
+}
+
+.div1-cont7:hover h2 {
+    color: #ed9836;
+}
+
+.div1-cont7:hover h3 {
+    color: darkslateblue;
+}
+
+/* ////////////////////////////////////// */
+.div8 {
+    width: 100%;
+    height: 87vh;
+    margin-top: 150px;
+}
+
+.cont8 {
+    width: 85%;
+    height: 78vh;
+    margin: auto;
+    background-color: #EEEEEE;
+}
+
+.div1-cont8 {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.cont8-part1 img,
+.cont8-part1 {
+    width: 250px;
+    height: 250px;
+    margin: 0px 10px;
+}
+
+.icon-cont8 i {
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.cont8-part2 {
+    margin-top: 90px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    padding-left: 15px;
+}
+
+.div2-cont8 {
+    margin: 0px 58.55px;
+}
+
+.div1-cont8::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    opacity: 0.9;
+    transition: 1s;
+    z-index: 2;
+    background-color: #FF8A08;
+}
+
+.div1-cont8:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.div9 {
+    width: 100%;
+    height: 340px;
+    background-color: #373A40;
+}
+
+.cont9 {
+    width: 600px;
+    height: 260px;
+    margin-top: 0px;
+    margin: auto;
+}
+
+.image-cont9 img,
+.image-cont9 {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.social-icons i {
+    font-size: 23px;
+    padding: 15px 14px;
+    color: white;
+}
+
+.icon-cont9 {
+    margin: 0px -150px;
+    width: 600px;
+    height: 130px;
+    padding-top: 30px;
+}
+
+.social-icons .icon1 {
+    width: 50px;
+    height: 50px;
+    background-color: #ee9b0098;
+    border-radius: 100%;
+    margin: -10px 10px;
+
+}
+
+.social-icons .icon1:hover {
+    background-color: #ed9836;
+}
+
+.div9 p {
+    text-align: center;
+    font-size: large;
+    color: #808080;
+}
